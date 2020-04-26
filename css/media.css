@@ -1,0 +1,627 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+	/*Disable Animation on Mobile Devices*/
+	.animated {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+/*---------------------------------------------------------------*/
+
+
+@media (min-width: 800px) and (max-width: 1000px){
+
+.block1{
+  margin-bottom: 430px;
+}
+.usedSpace{
+    width: 45%;
+  left: 0;
+} 
+.revenue{
+  width:45%;
+ left: 48%;
+}
+.fixed{
+   width: 45%;
+  left: 0;
+  margin-top: 300px;
+}
+.followers{
+  width:45%;
+ left: 48%;
+   margin-top: 300px;
+}
+
+.tasks{
+  margin-top: -90px;
+  width: 90%;
+}
+  .stats{
+    margin-top: 250px;
+  width:90%;
+  left: 0;
+
+}
+footer{
+  margin-top: 450px;
+}
+
+}
+
+@media (min-width: 650px) and (max-width: 800px){
+  
+   #menu__toggle {
+  opacity: 0;
+}
+.hamburger-menu{
+
+}
+.menu__btn {
+  display: flex; 
+  position: fixed;
+  align-items: center;  
+  top: 20px;
+  left: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+  margin-top: 20px;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 40px;
+  height: 2px;
+  background-color: #616161;
+ 
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+   
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+  
+}
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  width: 300px;
+  margin-left: 80px;
+  height: 450px;
+  padding: 20px 0 0 20px;
+  list-style: none;
+  text-align: center;
+  background-color: #ECEFF1;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .5);
+  z-index: 5;
+  padding-bottom: 240px;
+}
+/* элементы меню */
+.menu__item {
+   display: block;
+   color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 10px 10px;
+  -ms-text-align-last: left;
+  text-align-last: left;
+}
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  transition-duration: .25s;
+}
+.menu__box {
+  transition-duration: .25s;
+}
+.menu__item {
+  transition-duration: .25s;
+}
+.sidebar{
+  position: absolute;
+  border: none;
+  background-color: #e6e2e7;
+  margin-top: -100px;
+  margin-left: -200px;
+}
+.wrapper{
+  background-color: #e6e2e7;
+  max-width: 800px;
+}
+.company{
+  display: none;
+}
+.dashboard{
+  max-width: 900px;
+}
+.dashboard .title{
+  margin-left: 80px;
+}
+
+.block1{
+  margin-bottom: 430px;
+}
+.usedSpace{
+    width: 45%;
+  left: 0;
+} 
+.revenue{
+  width:45%;
+ left: 48%;
+}
+.fixed{
+   width: 45%;
+  left: 0;
+  margin-top: 300px;
+}
+.followers{
+  width:45%;
+ left: 48%;
+   margin-top: 300px;
+}
+
+.tasks{
+  margin-top: -90px;
+  width: 90%;
+}
+  .stats{
+    margin-top: 250px;
+  width:90%;
+  left: 0;
+
+}
+footer{
+  margin-top: 450px;
+}
+
+}
+@media (min-width: 500px) and (max-width: 650px){
+  #menu__toggle {
+  opacity: 0;
+}
+.hamburger-menu{
+
+}
+.menu__btn {
+  display: flex; 
+  align-items: center;
+  position: fixed;  
+  top: 20px;
+  left: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+  margin-top: 20px;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 40px;
+  height: 2px;
+  background-color: #616161;
+ 
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+   
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+  
+}
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  width: 300px;
+  margin-left: 80px;
+  height: 450px;
+  padding: 20px 0 0 20px;
+  list-style: none;
+  text-align: center;
+  background-color: #ECEFF1;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .5);
+  z-index: 5;
+  padding-bottom: 240px;
+}
+/* элементы меню */
+.menu__item {
+   display: block;
+   color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 10px 10px;
+  -ms-text-align-last: left;
+  text-align-last: left;
+}
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  transition-duration: .25s;
+}
+.menu__box {
+  transition-duration: .25s;
+}
+.menu__item {
+  transition-duration: .25s;
+}
+.sidebar{
+  position: absolute;
+  border: none;
+  background-color: #e6e2e7;
+  margin-top: -100px;
+  margin-left: -200px;
+}
+.wrapper{
+  background-color: #e6e2e7;
+  
+}
+.company{
+  display: none;
+}
+.dashboard{
+  max-width: 900px;
+}
+.dashboard .title{
+  margin-left: 80px;
+}
+
+.block1{
+  margin-bottom: 430px;
+}
+.usedSpace{
+    width: 45%;
+  left: 0;
+} 
+.revenue{
+  width:45%;
+ left: 48%;
+}
+.fixed{
+   width: 45%;
+  left: 0;
+  margin-top: 300px;
+}
+.followers{
+  width:45%;
+ left: 48%;
+   margin-top: 300px;
+}
+
+.tasks{
+  margin-top: 360px;
+  width: 90%;
+}
+  .stats{
+    margin-top: 700px;
+  width:90%;
+  left: 0;
+
+}
+footer{
+  margin-top: 450px;
+}
+.block2{
+  margin-bottom: 950px;
+}
+.block3{
+  margin-bottom: 600px;
+}
+.sales{
+  width: 90%;
+
+}
+.email{
+  margin-top: 500px;
+  left: 0%; 
+  width: 90%;
+ 
+}
+.task{
+  margin-top:950px;
+  left: 0%; 
+ width: 90%;
+ 
+}
+
+}
+@media (max-width: 500px){
+    #menu__toggle {
+  opacity: 0;
+}
+.hamburger-menu{
+
+}
+.menu__btn {
+  display: flex; 
+  position: fixed;
+  align-items: center;  
+  top: 20px;
+  left: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+  margin-top: 20px;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 40px;
+  height: 2px;
+  background-color: #616161;
+ 
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+   
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+  
+}
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  width: 300px;
+  margin-left: 80px;
+  height: 450px;
+  padding: 20px 0 0 20px;
+  list-style: none;
+  text-align: center;
+  background-color: #ECEFF1;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .5);
+  z-index: 5;
+  padding-bottom: 240px;
+}
+/* элементы меню */
+.menu__item {
+   display: block;
+   color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 10px 10px;
+  -ms-text-align-last: left;
+  text-align-last: left;
+}
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  transition-duration: .25s;
+}
+.menu__box {
+  transition-duration: .25s;
+}
+.menu__item {
+  transition-duration: .25s;
+}
+.sidebar{
+  position: absolute;
+  border: none;
+  background-color: #e6e2e7;
+  margin-top: -100px;
+  margin-left: -200px;
+}
+.wrapper{
+  background-color: #e6e2e7;
+  
+}
+.company{
+  display: none;
+}
+.dashboard{
+  max-width: 900px;
+}
+.dashboard .title{
+  margin-left: 80px;
+}
+
+.block1{
+  margin-bottom: 770px;
+}
+.usedSpace{
+    width: 90%;
+  left: 0;
+} 
+.revenue{
+  width:90%;
+ left: 0;
+ margin-top: 300px;
+}
+.fixed{
+   width: 90%;
+  left: 0;
+  margin-top: 470px;
+}
+.followers{
+  width:90%;
+ left: 0;
+   margin-top: 640px;
+}
+
+.tasks{
+  margin-top: 360px;
+  width: 90%;
+}
+  .stats{
+    margin-top: 700px;
+  width:90%;
+  left: 0;
+
+}
+footer{
+  margin-top: 450px;
+}
+.block2{
+  margin-bottom: 950px;
+}
+.block3{
+  margin-bottom: 600px;
+}
+.sales{
+  width: 90%;
+
+}
+.email{
+  margin-top: 500px;
+  left: 0%; 
+  width: 90%;
+ 
+}
+.task{
+  margin-top:950px;
+  left: 0%; 
+ width: 90%;
+ 
+}
+
+}
